@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatGPT конструктор сайтов</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+<div id="custom-content" contenteditable="true">
+    <style id="custom-style"></style>
+</div>
+<div id="chat-block">
+    <div id="chat-text-block">
+        <p class="text-left">Просто введи свой запрос. Например "Сделай фон страницы красным"</p>
+
+    </div>
+    <div class="chat-input-block">
+        <input id="text-input" type="text"></input>
+    </div>
+</div>
+
+
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>

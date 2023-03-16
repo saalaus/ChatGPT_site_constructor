@@ -1,0 +1,44 @@
+html, body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#chat-block{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    height: 150px;
+    border: solid black 1px;
+    max-width: 20%;
+    background-color: white;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+#chat-text-block{
+    overflow-y: auto;
+    height: 80%;
+}
+
+#text-input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#custom-content{
+    height: 100%;
+    width: 100%;
+}
+
+.chat-input-block{
+    height: 20%;
+}

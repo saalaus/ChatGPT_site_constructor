@@ -6,32 +6,27 @@ html, body{
 }
 
 #chat-block{
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    height: 150px;
-    border: solid black 1px;
-    max-width: 20%;
-    background-color: white;
-}
-
-.text-left{
-    text-align: left;
-}
-
-.text-right{
-    text-align: right;
-}
-
-#chat-text-block{
-    overflow-y: auto;
-    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
 }
 
 #text-input{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 2px solid black
+}
+
+#text-input:focus-visible{
+    outline: none;
 }
 
 #custom-content{
@@ -40,5 +35,5 @@ html, body{
 }
 
 .chat-input-block{
-    height: 20%;
+    height: 50%;
 }

@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>ChatGPT конструктор сайтов</title>
+    <head>
+        <meta charset="UTF-8" />
+        <title>ChatGPT Construct</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-</head>
-<body>
-<div id="custom-content" contenteditable="true">
-    <style id="custom-style"></style>
-</div>
-<div id="chat-block">
-    <div class="chat-input-block">
-        <input id="text-input" type="text" placeholder="Просто начни вводить свой запрос. Например: Сделай фон страницы красным" />
-    </div>
-</div>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='index.css') }}"
+        />
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.0/split.min.js"></script>
+    </head>
+    <body>
+        <div class="split">
+            <div id="split-0">
+                <div
+                    id="custom-content"
+                    contenteditable="true"
+                >
+                    <style id="custom-style"></style>
+                    <script id="custom-code"></script>
+                </div>
+                <div id="chat-block">
+                    <div class="chat-input-block">
+                        <input
+                            id="text-input"
+                            type="text"
+                            placeholder="Просто начни вводить свой запрос. Например: Сделай фон страницы красным"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="split-1">
+                <div class="gutter-text">Code</div>
+            </div>
+            <div id="split-2">
+                <div class="gutter-text">Context</div>
+            </div>
+        </div>
 
-<script src="{{ url_for('static', filename='index.js') }}"></script>
-</body>
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+    </body>
 </html>
